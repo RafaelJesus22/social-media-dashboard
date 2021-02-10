@@ -1,0 +1,17 @@
+@import 'resets';
+@import 'mixins';
+
+body {
+  height: 100vh;
+}
+
+main {
+  width: 1440px;
+  margin: 0 auto;
+  background:$wt-blue-text;
+  margin-top: 30px;
+}
+
+header, .r-header {
+  @include d-flex(center, space-between);
+}
