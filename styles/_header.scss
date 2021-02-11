@@ -1,0 +1,40 @@
+header, .r-header {
+  @include d-flex(center, space-between);
+  z-index: 1;
+}
+
+.l-header {
+  z-index: 1;
+  & p {
+    color: $dt-blue-text;
+  }
+}
+
+.toggle {
+  height: 20px;
+  width: 40px;
+  padding: 3px 5px;
+  margin-left: 15px;
+  
+  background: $dt-toggle;
+  border-radius: 30px;
+  cursor: pointer;
+  
+  display: flex;
+  justify-content: flex-start;
+
+  & button {
+    height: 100%;
+    width: 50%;
+    border-radius: 50%;
+    
+    border: none;
+    outline: none;
+    background: $dt-card-bg;
+    cursor: pointer;
+  }
+}
+
+.t-white {
+  justify-content: flex-end;
+}

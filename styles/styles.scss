@@ -1,17 +1,74 @@
-@import 'resets';
 @import 'mixins';
+@import 'resets';
+@import 'header';
+@import 'themes';
 
-body {
-  height: 100vh;
-}
 
-main {
-  width: 1440px;
+.content {
+  max-width: 1440px;
   margin: 0 auto;
-  background:$wt-blue-text;
-  margin-top: 30px;
+  padding-top: 30px;
+
 }
 
-header, .r-header {
+.social {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+
+  margin-top: 50px
+}
+
+.c-top {
   @include d-flex(center, space-between);
+  flex-direction: column;
+  position: relative;
+  border-radius: .3rem;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    height: .2rem;
+    width: 100%;
+    background: #0079bb;
+    border-radius: .2rem .2rem 0 0;
+  }
+
+  & .social-name {
+    margin: 30px 0;
+  
+    & span {
+      color: $dt-blue-text;
+    }
+  }
+
+  & h1 {
+    font-size: 450%;
+  }
+
+  & p {
+    text-transform: uppercase;
+    color: $dt-blue-text;
+    letter-spacing: .4rem;
+    margin-bottom: 30px;
+  }
+
+  & .result {
+    @include d-flex(center, center);
+    margin-bottom:30px;
+
+    & img {
+      margin-right: 10px;
+    }
+
+    & .more-followers {
+      color: $up-green;
+    }
+
+    & .less-followers {
+      color: $down-red;
+    }
+  }
+
 }
