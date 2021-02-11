@@ -2,7 +2,7 @@ $up-green: #1db489;
 $down_red: #dc414c ;
 
 $facebook: 	#198ff5;
-$instagram: inear-gradient(#fdc468, #df4996 );
+$instagram: linear-gradient(#fdc468, #df4996 );
 $twitter:	#1ca0f2 ;
 $youtube:	#c4032a ;
 
@@ -45,6 +45,6 @@ main {
     right: 0;
     height: 40%;
     border-radius: 4rem;
-    background-color: $dt-top-bg 
+    
   }
 }

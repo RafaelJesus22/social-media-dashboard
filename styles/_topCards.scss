@@ -1,0 +1,80 @@
+.social {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+
+  margin-top: 50px
+}
+
+.c-top {
+  @include d-flex(center, space-between);
+  flex-direction: column;
+  position: relative;
+  border-radius: .5rem;
+
+  & .top-bar {
+    position: absolute;
+    content: '';
+    top: 0;
+    height: .267rem;
+    width: 100%;
+    border-radius: .2rem .2rem 0 0;
+    
+    &.fb {
+      background: $facebook;
+    }
+
+    &.tt {
+      background: $twitter;
+    }
+
+    &.ig {
+      background: $instagram;
+    }
+
+    &.yt {
+      background: $youtube;
+    }
+  }
+
+  & .social-name {
+    margin: 30px 0;
+    @include d-flex(center, center);
+  
+    & span {
+      color: $dt-blue-text;
+      margin-left: 10px;
+    }
+  }
+
+  & h1 {
+    font-size: 450%;
+  }
+
+  & p {
+    text-transform: uppercase;
+    color: $dt-blue-text;
+    letter-spacing: .4rem;
+    margin-bottom: 30px;
+  }
+
+  & .result {
+    @include d-flex(center, center);
+    margin-bottom:30px;
+
+    & img {
+      margin-right: 10px;
+    }
+
+    & .more-followers {
+      color: $up-green;
+    }
+
+    & .less-followers {
+      color: $down-red;
+    }
+  }
+}
+
+
+

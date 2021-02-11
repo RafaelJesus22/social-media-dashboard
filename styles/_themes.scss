@@ -1,8 +1,30 @@
+.primary-dark-text {
+  color: $dt-white-text;
+}
+.secondary-dark-text {
+  color: $dt-blue-text;
+}
+.primary-white-text {
+  color: $wt-text;
+}
+
+.secondary-white-text {
+  color: $wt-blue-text;
+}
+
 .dark {
   color: #fff;
   background: $dt-bg;
+
+  &::before {
+    background-color: $dt-top-bg 
+  }
 }
 
 .d-card {
   background: $dt-card-bg;
+}
+
+.white {
+  color: $wt-text;
 }
