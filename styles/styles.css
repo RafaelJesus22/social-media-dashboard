@@ -8,13 +8,7 @@ body {
   height: 100vh;
 }
 
-main {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-main::before {
+body::before {
   content: '';
   position: absolute;
   top: -60px;
@@ -22,6 +16,11 @@ main::before {
   right: 0;
   height: 40%;
   border-radius: 4rem;
+}
+
+main {
+  width: 100%;
+  height: 100%;
 }
 
 header, .r-header {
@@ -60,6 +59,8 @@ header, .r-header {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-transition: .7s ease-in;
+  transition: .7s ease-in;
 }
 
 .toggle button {
@@ -76,6 +77,16 @@ header, .r-header {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  background: #aeb3cb;
+}
+
+.t-white:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#378fe6), to(#3eda82));
+  background: linear-gradient(#378fe6, #3eda82);
+}
+
+.t-white button {
+  background: #fff;
 }
 
 .social {
@@ -262,30 +273,23 @@ header, .r-header {
   color: #dc414c;
 }
 
-.content {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding-top: 30px;
-}
-
-.primary-dark-text {
+.primary-text.dark-text {
   color: #fff;
 }
 
-.secondary-dark-text {
-  color: #8b97c6;
-}
-
-.primary-white-text {
+.primary-text.white-text {
   color: #1e202a;
 }
 
-.secondary-white-text {
+.secondary-text.dark-text {
+  color: #8b97c6;
+}
+
+.secondary-text.white-text {
   color: #63687e;
 }
 
 .dark {
-  color: #fff;
   background: #1e202a;
 }
 
@@ -293,11 +297,25 @@ header, .r-header {
   background-color: #1f212e;
 }
 
+.white {
+  background: #fff;
+}
+
+.white::before {
+  background-color: #f5f7ff;
+}
+
 .d-card {
   background: #252a41;
 }
 
-.white {
-  color: #1e202a;
+.w-card {
+  background: #f0f2fa;
+}
+
+.content {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 30px;
 }
 /*# sourceMappingURL=styles.css.map */

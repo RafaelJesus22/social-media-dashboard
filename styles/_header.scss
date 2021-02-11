@@ -23,6 +23,8 @@ header, .r-header {
   display: flex;
   justify-content: flex-start;
 
+  transition: .7s ease-in;
+
   & button {
     height: 100%;
     width: 50%;
@@ -37,4 +39,14 @@ header, .r-header {
 
 .t-white {
   justify-content: flex-end;
+  background: $wt-toggle;
+
+  &:hover {
+    background: $dt-toggle;
+  }
+
+  & button {
+    background: #fff;
+
+  }
 }

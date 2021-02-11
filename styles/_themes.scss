@@ -1,30 +1,42 @@
-.primary-dark-text {
-  color: $dt-white-text;
+.primary-text {
+  &.dark-text {
+    color: $dt-white-text;
+  }
+
+  &.white-text {
+    color: $wt-text;
+  }
 }
-.secondary-dark-text {
-  color: $dt-blue-text;
-}
-.primary-white-text {
-  color: $wt-text;
+.secondary-text {
+  &.dark-text {
+    color: $dt-blue-text;
+  }
+
+  &.white-text {
+    color: $wt-blue-text;
+  }
 }
 
-.secondary-white-text {
-  color: $wt-blue-text;
-}
 
 .dark {
-  color: #fff;
   background: $dt-bg;
 
   &::before {
-    background-color: $dt-top-bg 
+    background-color: $dt-top-bg;
+  }
+}
+
+.white {
+  background: $wt-bg;
+
+  &::before {
+    background-color: $wt-top-bg;
   }
 }
 
 .d-card {
   background: $dt-card-bg;
 }
-
-.white {
-  color: $wt-text;
+.w-card {
+  background: $wt-card-bg;
 }
