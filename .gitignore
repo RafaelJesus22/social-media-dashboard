@@ -12,7 +12,7 @@
 *.fig
 
 *.gitignore
-/design
+
 
 
 # Avoid your project being littered with annoying .DS_Store files!
