@@ -6,7 +6,31 @@
 @import 'themes';
 
 .content {
+  width: 90%;
   max-width: 1440px;
   margin: 0 auto;
   padding-top: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .content {
+    max-width: 375px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
