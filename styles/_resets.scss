@@ -30,6 +30,7 @@ $wt-text: 	#1e202a;
 
 body {
   height: 100vh;
+  min-width: 400px;
 
   &::before {
     content: '';
